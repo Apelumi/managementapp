@@ -65,251 +65,251 @@ class MyApp extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.black.withOpacity(0.5)
                   ), // set the width of the container to be as wide as the screen
-                  child: Container(
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: _tabclasslist.map((data) => 
-                      Padding(
-                        padding: EdgeInsets.all(10.0),
-                        child: Center(
-                          child:Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            crossAxisAlignment: CrossAxisAlignment.center,
+                  // child: Container(
+                  //   child: ListView(
+                  //     scrollDirection: Axis.horizontal,
+                  //     children: _tabclasslist.map((data) => 
+                  //     Padding(
+                  //       padding: EdgeInsets.all(10.0),
+                  //       child: Center(
+                  //         child:Row(
+                  //           mainAxisSize: MainAxisSize.min,
+                  //           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  //           crossAxisAlignment: CrossAxisAlignment.center,
                             
-                            children: [
-                              Container(
+                  //           children: [
+                  //             Container(
                                 
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Flexible(
-                                      fit: FlexFit.loose,
-                                      child: Container(
-                                        child: Icon(data.icons, color: Colors.white, size: 25.0,),         
-                                      ),
-                                    ),
-                                    Flexible(fit: FlexFit.loose,child: Center(child: Container(child: SizedBox(height: 2.0,),))),
-                                    Flexible(fit: FlexFit.loose,child: Center(child: Container(child: Text(data.iconname, style: TextStyle(color: Colors.white, fontSize: 12.5)),)))
+                  //               child: Column(
+                  //                 crossAxisAlignment: CrossAxisAlignment.center,
+                  //                 mainAxisAlignment: MainAxisAlignment.center,
+                  //                 children: [
+                  //                   Flexible(
+                  //                     fit: FlexFit.loose,
+                  //                     child: Container(
+                  //                       child: Icon(data.icons, color: Colors.white, size: 25.0,),         
+                  //                     ),
+                  //                   ),
+                  //                   Flexible(fit: FlexFit.loose,child: Center(child: Container(child: SizedBox(height: 2.0,),))),
+                  //                   Flexible(fit: FlexFit.loose,child: Center(child: Container(child: Text(data.iconname, style: TextStyle(color: Colors.white, fontSize: 12.5)),)))
                                     
-                                  ],
-                                ),
-                              )
+                  //                 ],
+                  //               ),
+                  //             )
                               
                               
-                            ],
-                          ),
-                        ),
-                      )).toList(),
-                    ),
-                  ),
-                  
-
-                  // Center(
-                  //   child: Row(
-                  //     mainAxisAlignment: MainAxisAlignment.spaceEvenly, // distribute icons evenly across the row
-                  //     children: [
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.home, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},  
-                  //               ),
-                  //               Text("Refresh", style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
+                  //           ],
                   //         ),
                   //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.search, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text("NewGroup", style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.settings, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Edit Group', style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.home, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text("Delete Group", style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.search, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text("New Product", style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.settings, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Edit Product', style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.home, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Delete Product', style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.search, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Print', style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.settings, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Save as pdf', style: TextStyle(color: Colors.white, fontSize: 10.0),),
-                                
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.home, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Price tags', style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.search, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Sorting', style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.settings, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Mov.avg.price', style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.home, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Import', style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.search, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Export', style: TextStyle(color: Colors.white,fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       Expanded(
-                  //         child: Container(
-                  //           child: Column(
-                  //             children: [
-                  //               IconButton(
-                  //                 icon: Icon(Icons.settings, size: 20.0, color: Colors.white,),
-                  //                 onPressed: () {},
-                  //               ),
-                  //               Text('Help!', style: TextStyle(color: Colors.white, fontSize: 10.0))
-                  //             ],
-                  //           ),
-                  //         ),
-                  //       ),
-                  //       // add more IconButton widgets as needed
-                  //     ],
+                  //     )).toList(),
                   //   ),
                   // ),
+                  
+
+                  child: Center(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly, // distribute icons evenly across the row
+                      children: [
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.home, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},  
+                                ),
+                                Text("Refresh", style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.search, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text("NewGroup", style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.settings, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Edit Group', style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.home, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text("Delete Group", style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.search, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text("New Product", style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.settings, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Edit Product', style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.home, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Delete Product', style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.search, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Print', style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.settings, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Save as pdf', style: TextStyle(color: Colors.white, fontSize: 10.0),),
+                                
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.home, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Price tags', style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.search, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Sorting', style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.settings, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Mov.avg.price', style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.home, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Import', style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.search, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Export', style: TextStyle(color: Colors.white,fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                IconButton(
+                                  icon: Icon(Icons.settings, size: 20.0, color: Colors.white,),
+                                  onPressed: () {},
+                                ),
+                                Text('Help!', style: TextStyle(color: Colors.white, fontSize: 10.0))
+                              ],
+                            ),
+                          ),
+                        ),
+                        // add more IconButton widgets as needed
+                      ],
+                    ),
+                  ),
                 ),
                 FittedBox(
                   fit: BoxFit.fill,
